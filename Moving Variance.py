@@ -1,8 +1,3 @@
-import numpy as np
-import pandas as pd
-import os
-from tqdm import tqdm
-
 
 # TODO change this data parameter with your own data
 def Find_Variability(data):
