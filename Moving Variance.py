@@ -30,9 +30,8 @@ def Find_Variability(data):
 
         # At first 1/(1-beta) iterations do bias correction
         if counter < stop_bias_correction:
-            variance = (1 / (1 - beta ** (counter + 1))) * Avg_of_square_data - (1 / (1 - beta ** (
-                        counter + 1)) * Avg) ** 2  # - (1/(1-beta**counter)) * previous_Avg_of_square_data + (1/(1-beta**counter) * previous_Avg) **2
+            variance = (1 / (1 - beta ** (counter + 1))) * Avg_of_square_data - (1 / (1 - beta ** (counter + 1)) * Avg) ** 2 
         else:
-            variance = Avg_of_square_data - Avg ** 2  # - (previous_Avg_of_square_data - previous_Avg**2)
+            variance = Avg_of_square_data - Avg ** 2
 
         counter += 1
